@@ -3,17 +3,19 @@
 
 $(document).ready(function() {
 
-
-
+    // $(“.available”).on(“click”, function(){
+    //     $(this).removeClass(“available”).addClass(“reserved”);
+    //     $(“#form”).css(“display”, “flex”);
+    //    });
 
 // Get the modal
-let modal = document.getElementById('myModal');
+let modal = $("#myModal")[0];
 
 // Get the button that opens the modal
 // let btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-// let span = document.getElementsByClassName("close")[0];
+let span = $(".close")[0];
 
 // When the user clicks on a table, open the modal 
 $(".table").click(function() {
@@ -29,7 +31,6 @@ $(".save-btn").click(function(){
     $(".modal").css({"display":"none"});
     $("body").css({"overflow-y": "auto"}); //Prevent double scrollbar.
     });
-
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
