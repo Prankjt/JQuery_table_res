@@ -3,10 +3,24 @@
 
 $(document).ready(function() {
 
-    // $(“.available”).on(“click”, function(){
-    //     $(this).removeClass(“available”).addClass(“reserved”);
-    //     $(“#form”).css(“display”, “flex”);
-    //    });
+let table = null;
+$(document).on("click", ".available", function(e) {
+    table = e.target;
+    $("form").fadeIn(1500);    
+});
+
+$(document).on("mouseenter", ".available", function(e) {
+    $(e.target).toggleClass("hover")
+});
+
+$(document).on("mouseleave", ".available", function(e) {
+    $(e.target).toggleClass("hover")
+});
+
+$(document).on("click", "button", function(e) {
+    $(table).removeClass("available").addClass("reserved");
+    $("form").fadeOut(1500);
+});
 
 // Get the modal
 let modal = $("#myModal")[0];
