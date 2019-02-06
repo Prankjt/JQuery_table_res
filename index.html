@@ -22,61 +22,40 @@
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span> <!-- 'X' close button -->
-                <form class="form">
-                    <p class="form-heading">New Reservation</p>
-                    <p>Table number: ?</p>
+            <form class="form">
+                <h3 class="form-heading">New Reservation</h3>
+                <h6>Table number: <span class="num-table"></span></h6>
 
-                    <input type="text" placeholder="Enter Name" class="form-input" required>
+                <input type="text" id="name" placeholder="Enter Name" class="form-input" required>
 
-                    <input type="text" placeholder="Enter Phone" class="form-input" required>
-            
-                    <input type="text" placeholder="Enter #Guests" class="form-input" required>
+                <input type="phone" id="phone" placeholder="Enter Phone" class="form-input" required>
 
-                    <button type="button" class="save-btn">SAVE</button>
-                </form>    
+                <input type="size" id="guests" placeholder="Enter #Guests" class="form-input" required>
+
+                <button type="button" class="save-btn">SAVE</button>
+            </form>
 
         </div>
 
     </div>
-
 
     <section class="header">
         <h1 class="heading">Table Finder</h1>
         <h3 class="subheading">Pick your table now</h3>
     </section>
 
-    <section class="container">
+    
         <div class="table-container">
-            <div class="table seat1 available">
-                1
-            </div>
-            <div class="table seat2 available">
-                2
-            </div>
-            <div class="table seat3 available">
-                3
-            </div>
-            <div class="table seat4 available">
-                4
-            </div>
-            <div class="table seat5 available">
-                5
-            </div>
-            <div class="table seat6 available">
-                6
-            </div>
-            <div class="table seat7 available">
-                7
-            </div>
-            <div class="table seat8 available">
-                8
-            </div>
-            <div class="table seat9 available">
-                9
-            </div>
+            <div type="button" class="table available" value="1">1</div>
+            <div type="button" class="table available" value="2">2</div>
+            <div type="button" class="table available" value="3">3</div>
+            <div type="button" class="table available" value="4">4</div>
+            <div type="button" class="table available" value="5">5</div>
+            <div type="button" class="table available" value="6">6</div>
+            <div type="button" class="table available" value="7">7</div>
+            <div type="button" class="table available" value="8">8</div>
+            <div type="button" class="table available" value="9">9</div>
         </div>
-
-    </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="script.js"></script>
